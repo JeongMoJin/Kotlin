@@ -34,11 +34,17 @@ val result : Boolean = number10 > number11
 println(result)
 val result2 : Boolean = number10 == number11
 println(result2)
+// ===, !== -> 잘 사용하지 않는다
+// - 주소값이 같은지 물어보는 연산자
+// ==, !=
+// - 값이 같은지 물어보는 연산자
 
-
-
-
-
+// 논리연산자
+val boolean1 : Boolean = false
+val boolean2 : Boolean = true
+val result4 : Boolean = boolean1 && boolean2
+val result5 : Boolean = boolean1 || boolean2
+println(result5)
 
 
 
