@@ -35,6 +35,8 @@ var examScores = arrayOf<Int>(examScore1, examScore2, examScore3)
 val examScore4 = examScores[0]
 println(examScore4)
 
+// commit 수정 2024-01-05
+
 
 
 
