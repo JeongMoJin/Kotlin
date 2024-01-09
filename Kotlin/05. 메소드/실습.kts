@@ -8,8 +8,8 @@ fun plusNumbers(firstNum: Int, secondNum: Int): Int {
 plusNumbers(firstNum = 10, secondNum = 20) // -> 30
 plusNumbers(10, 20) // -> 30
 
-val result : Int = plusNumbers(firstNum = 5, secondNum = 7)
-println(result)
+//val result : Int = plusNumbers(firstNum = 5, secondNum = 7)
+//println(result)
 
 // 기본값이 있는 함수
 fun plusNumbersWithDefault(firstNum: Int, secondNum:Int = 10):Int{
