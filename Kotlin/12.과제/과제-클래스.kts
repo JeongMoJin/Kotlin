@@ -41,4 +41,33 @@ class Calculator2 constructor(val initialValue: Int = 0) {
 }
 val calculator2 = Calculator2(10)
 calculator2.calculate('+',10)
-println(calculator2.result)
+
+class Calculater3 {
+
+    var result : Int = 0
+    fun calculate(operaters: List<Char>, inputNumbers: List<Int>) {
+        operaters.forEachIndexed {index, operater ->
+            this._calculate(operater, inputNumbers[index])
+        }
+
+    }
+
+    fun _calculate(function: Char, inputNumber: Int) {
+        when(function) {
+            '+'-> this.result += inputNumber
+            '-'-> this.result -= inputNumber
+            '*'-> this.result *= inputNumber
+            '/'-> this.result /= inputNumber
+            else -> println("잘못된 연산 입니다")
+        }
+    }
+}
+
+val calculater3 = Calculater3()
+calculater3.calculate(listOf<Char>('+', '-'), listOf<Int>(10,20))
+println(calculater3.result)
+
+
+
+
+
